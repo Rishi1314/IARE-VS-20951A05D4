@@ -1,9 +1,9 @@
 import java.util.Scanner;  // Import the Scanner class
 
-public class reversestring extends Thread {
+public class reversemultithreading extends Thread {
     private String sentence;
 
-    public reversestring(String sentence) {
+    public reversemultithreading(String sentence) {
         this.sentence = sentence;
     }
 
@@ -25,7 +25,7 @@ public class reversestring extends Thread {
         Scanner sc= new Scanner(System.in);
         System.out.print("Enter a string: ");  
         String str= sc.nextLine();   
-        reversestring thread = new reversestring(str);
+        reversemultithreading thread = new reversemultithreading(str);
         thread.start();
         try {
             thread.join();
